@@ -1,0 +1,9 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjU0ODk0OTQsImV4cCI6MTYyNTQ5NDQ5NH0.VV6QI86M9zKgyeQk-YIqng8CyfQqZkzbUsxRhEWpUAg
+
+
+{
+    "username":"anthonyfinix",
+    "password":"letmein"
+}

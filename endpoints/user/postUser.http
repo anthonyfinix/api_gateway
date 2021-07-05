@@ -1,0 +1,41 @@
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name":{
+        "first_name":"anthony",
+        "last_name":"finix"
+    },
+    "username":"anthonyfinix",
+    "password":"letmein",
+    "primary_number":"9818031042",
+    "secondary_number":"9818031042",
+    "email":"anthonyfinix@gmail.com",
+    "address":"2190/7a",
+    "city":"faridabad",
+    "country":"india",
+    "state":"haryana",
+    "active":true,
+    "role":"admin"
+}
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name":{
+        "first_name":"amit",
+        "last_name":"sharma"
+    },
+    "username":"amitsharma",
+    "password":"letmein",
+    "primary_number":"9818031043",
+    "secondary_number":"9818031043",
+    "email":"amitsharma@gmail.com",
+    "address":"2190/7a",
+    "city":"faridabad",
+    "country":"india",
+    "state":"haryana",
+    "active":true,
+    "role":"admin"
+}
