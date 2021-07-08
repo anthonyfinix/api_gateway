@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express"
 import { authHttp } from "../util/axios/auth";
-export default async (req: Request, res: Response, next: NextFunction) => {
+export default async (req: any, res: Response, next: NextFunction) => {
     if (req.headers.authorization) {
         let headers = { ...req.headers }
         try {
