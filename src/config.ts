@@ -23,19 +23,24 @@ export interface IConfig {
         protocol: string
         port: number
     }
+    roleServer:{
+        host: string,
+        protocol: string
+        port: number
+    }
 
 }
 class Configuration implements IConfig {
-    env: string = "development";
-    port: number = 3100;
-    default_user_verification_state: boolean = false;
-    default_user_role: string = "admin";
+    env = "development";
+    port = 3100;
+    default_user_verification_state = false;
+    default_user_role = "admin";
     mongooseOptions = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false
     }
-    amqpsUrl: string = "amqp://localhost"
+    amqpsUrl = "amqp://localhost"
     express = {
         default_url_encoding_extended: true
     }
@@ -48,6 +53,11 @@ class Configuration implements IConfig {
         host: "localhost",
         protocol: "http",
         port: 3002
+    }
+    roleServer = {
+        host: "localhost",
+        protocol: "http",
+        port: 3006
     }
     setConfiguration(options: IConfig) {
         if (options.port) this.port = options.port;
